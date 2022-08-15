@@ -51,7 +51,15 @@ Note that the inputs of our method are only raw information of a heterogeneous n
 
 ## Search
 
-To obtain the architectures we use in the paper, run:
+For Multigraph, run the following commands to train the derived architectures from scratch:
+
+```shell
+python train.py --dataset Amazon --lr 0.01 --wd 0.001 --dropout 0.5 --ratio 0.5 --arch Amazon_M
+python train.py --dataset Yelp --lr 0.02 --wd 0.0004 --dropout 0.5 --ratio 0.5 --arch Yelp_M
+python train.py --dataset Douban_Movie --lr 0.01 --wd 0.0003 --dropout 0.1  --ratio 0.6 --arch Douban_Movie_M
+```
+
+For PMMM, run the following commands to train the derived architectures from scratch:
 
 ```shell
 python train_search.py --dataset Amazon --steps_s 4 --steps_t 4 --lr 0.01 --lam_seq 0.8  --lam_res 0.8  --seed 0 
