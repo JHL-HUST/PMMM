@@ -60,17 +60,17 @@ Suppose the number of intermediate states in a meta graph is K. An encoding of a
 For Multigraph, run the following commands to train the derived architectures from scratch:
 
 ```shell
-python train.py --dataset DBLP --lr 0.005 --wd 0.002 --dropout 0.3 --ratio 0.8 --arch DBLP_M
+python train.py --dataset DBLP --lr 0.004 --wd 0.001 --seed 1 --dropout 0.5 --arch DBLP_M
 python train.py --dataset ACM --lr 0.0005 --wd 0.1 --dropout 0.4  --no_norm --in_nl --arch ACM_M
-python train.py --dataset IMDB --lr 0.01 --wd 0.02 --dropout 0.5 --ratio 0.1 --arch IMDB_M 
+python train.py --dataset IMDB --lr 0.01 --wd 0.02 --seed 30 --dropout 0.5 --ratio 0.1 --arch IMDB_M 
 ```
 
 For PMMM, run the following commands to train the derived architectures from scratch:
 
 ```shell
-python train.py --dataset DBLP --lr 0.003 --wd 0.002 --dropout 0.5 --ratio 0.8 --arch DBLP --seed 6
-python train.py --dataset ACM --lr 0.002 --wd 0.2 --dropout 0.1 --ratio 0.8 --no_norm --in_nl --arch ACM --seed 26
-python train.py --dataset IMDB --lr 0.02 --wd 0.01 --dropout 0.5 --ratio 0.1 --arch IMDB --seed 0
+python train.py --dataset DBLP --lr 0.003 --wd 0.002 --dropout 0.5 --seed 6 --ratio 0.8 --arch DBLP 
+python train.py --dataset ACM --lr 0.002 --wd 0.2 --dropout 0.1 --seed 26 --ratio 0.8 --no_norm --in_nl --arch ACM 
+python train.py --dataset IMDB --lr 0.02 --wd 0.01 --dropout 0.5 --seed 0 --ratio 0.1 --arch IMDB 
 ```
 
 Logs are automatically generated under `log/eval/` with the following format:
