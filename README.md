@@ -3,7 +3,7 @@
 We provide code for the Paper:
 
 **[Differentiable Meta Multigraph Search with Partial Message Propagation on Heterogeneous Information Networks ][1]**\
-Chao Li, Yixiao Yang, Kun He\
+Chao Li, Hao Xu, Kun He\
 [AAAI 2023]
 
 <img src='imgs/multigraph.png'/>
