@@ -16,7 +16,7 @@
 
 ## Preparing Data
 
-We use the preprocessed datasets provided by [GTN](https://github.com/seongjunyun/Graph_Transformer_Networks). Download data from [here](https://drive.google.com/file/d/1qOZ3QjqWMIIvWjzrIdRe3EA4iKzPi6S5/view?usp=sharing) and put DBLP, ACM and IMDB under `data`. Then, run:
+We use the preprocessed datasets provided by [GTN](https://github.com/seongjunyun/Graph_Transformer_Networks). Download data from [here](https://drive.google.com/file/d/1iV-WZWias6rVZxfz5-tjympj615hDWWe/view?usp=share_link) and put DBLP, ACM and IMDB under `data`. Then, run:
 
 ```shell
 python preprocess.py
