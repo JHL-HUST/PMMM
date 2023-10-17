@@ -1,6 +1,6 @@
 # PMMM 
 
-We provide code for the Paper Differentiable meta multigraph search with partial message propagation on heterogeneous information networks:
+We provide code for the Paper:
 
 **[Differentiable Meta Multigraph Search with Partial Message Propagation on Heterogeneous Information Networks ][1]**\
 Chao Li, Hao Xu, Kun He\
